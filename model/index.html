@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/aa8f6e2208.js" crossorigin="anonymous"></script>
+    <title>My mystery</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light top-menu">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">Concept-shop</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Catalog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+            </ul>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" aria-current="page" data-bs-toggle="dropdown" href="#"><i class="fa-solid fa-user"></i></a>
+                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                        <li><a class="dropdown-item" href="#">Регистрация</a></li>
+                        <li><a class="dropdown-item" href="#">Авторизация</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#modal-cart">
+                        
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <!-- Modal -->
+<div class="modal fade" id="modal-cart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header bg-secondary text-white"> 
+          <h5 class="modal-title" id="exampleModalLabel">Корзина</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <td> <img src="#" alt="img"> </td>
+                    <td> <a href="#"> Apple cinema 30 </a> </td>
+                    <td>299.99$<td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td> <img src="#" alt="img"> </td>
+                    <td> <a href="#"> Canon EOS 5D </a> </td>
+                    <td>299.99$<td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td> <img src="#" alt="img"> </td>
+                    <td> <a href="#"> HP  </a> </td>
+                    <td>299.99$<td>
+                    <td>1</td>
+                  </tr>
+              </table>
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Продолжить покупки</button>
+          <button type="button" class="btn btn-primary">Перейти к оформлению заказа</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-magnifying-glass"></i></i></a>
+                  </li>  
+                  
+                </ul>
+              
+            
+            </div>
+            
+        </div>
+          
+        </div>
+      </nav>
+
+        <div class="container-fluid my-carousel"> 
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel"  data-bs-keyboard="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="IMG\1.jpg" class="d-block w-100" alt="Island">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="IMG\2.jpg" class="d-block w-100" alt="Mountain">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="IMG\3.jpg" class="d-block w-100" alt="Sky">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+      
+        <section class="main-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="product-card">
+                  <div class="product-thumb">
+                    <a href="#"><img src="IMG\catalog\A.jpg"></a>
+                  </div>
+                  <div class="product-details">
+                    <h4><a href="">Model A</a></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil saepe non obcaecati rerum omnis nisi consectetur nam incidunt aperiam possimus quam, id alias suscipit maiores quos repellendus vero itaque recusandae.
+                    </p>
+                    <div class="product-bottom-details d-flex justify-content-between">
+                      <div class="product-price">
+                        <small>230.99$</small> 99$
+                      </div>
+                      <div class="product-links">
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#"><i class="fa-solid fa-heart"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="product-card">
+                  <div class="product-thumb">
+                    <a href="#"><img src="IMG\catalog\B.jpg"></a>
+                  </div>
+                  <div class="product-details">
+                    <h4><a href="">Model B</a></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil saepe non obcaecati rerum omnis nisi consectetur nam incidunt aperiam possimus quam, id alias suscipit maiores quos repellendus vero itaque recusandae.
+                    </p>
+                    <div class="product-bottom-details d-flex justify-content-between">
+                      <div class="product-price">
+                        <small>230.99$</small> 99$
+                      </div>
+                      <div class="product-links">
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#"><i class="fa-solid fa-heart"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="product-card">
+                  <div class="product-thumb">
+                    <a href="#"><img src="IMG\catalog\C.jpg"></a>
+                  </div>
+                  <div class="product-details">
+                    <h4><a href="">Model C</a></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil saepe non obcaecati rerum omnis nisi consectetur nam incidunt aperiam possimus quam, id alias suscipit maiores quos repellendus vero itaque recusandae.
+                    </p>
+                    <div class="product-bottom-details d-flex justify-content-between">
+                      <div class="product-price">
+                        <small>230.99$</small> 99$
+                      </div>
+                      <div class="product-links">
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#"><i class="fa-solid fa-heart"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="product-card">
+                  <div class="product-thumb">
+                    <a href="#"><img src="IMG\catalog\D.jpg"></a>
+                  </div>
+                  <div class="product-details">
+                    <h4><a href="">Model D</a></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil saepe non obcaecati rerum omnis nisi consectetur nam incidunt aperiam possimus quam, id alias suscipit maiores quos repellendus vero itaque recusandae.
+                    </p>
+                    <div class="product-bottom-details d-flex justify-content-between">
+                      <div class="product-price">
+                        <small>230.99$</small> 99$
+                      </div>
+                      <div class="product-links">
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#"><i class="fa-solid fa-heart"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="product-card">
+                  <div class="product-thumb">
+                    <a href="#"><img src="IMG\catalog\E.jpg"></a>
+                  </div>
+                  <div class="product-details">
+                    <h4><a href="">Model E</a></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil saepe non obcaecati rerum omnis nisi consectetur nam incidunt aperiam possimus quam, id alias suscipit maiores quos repellendus vero itaque recusandae.
+                    </p>
+                    <div class="product-bottom-details d-flex justify-content-between">
+                      <div class="product-price">
+                        <small>230.99$</small> 99$
+                      </div>
+                      <div class="product-links">
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#"><i class="fa-solid fa-heart"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="product-card">
+                  <div class="product-thumb">
+                    <a href="#"><img src="IMG\catalog\F.jpg"></a>
+                  </div>
+                  <div class="product-details">
+                    <h4><a href="">Model F</a></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil saepe non obcaecati rerum omnis nisi consectetur nam incidunt aperiam possimus quam, id alias suscipit maiores quos repellendus vero itaque recusandae.
+                    </p>
+                    <div class="product-bottom-details d-flex justify-content-between">
+                      <div class="product-price">
+                        <small>230.99$</small> 99$
+                      </div>
+                      <div class="product-links">
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#"><i class="fa-solid fa-heart"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        
+
+        <footer>
+          <section class="footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 col-6">
+                  <h4> Информация</h4>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О магазине</a></li>
+                    <li><a href="#">Оплата и доставка</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </div>
+        
+                <div class="col-md-3 col-6">
+                  <h4> Время работы</h4>
+                  <ul class="list-unstyled">
+                    <li><a href="#">г. Сан-Франциско ул. Пушкина 1</a></li>
+                    <li><a href="#">пн-вс: 9:00 - 18:00</a></li>
+                    <li><a href="#">без перерыва</a></li>
+                  </ul>
+                </div>
+        
+                <div class="col-md-3 col-6">
+                  <h4> Контакты</h4>
+                  <ul class="list-unstyled">
+                    <li><a href="tel:5551234567">5551234567</a></li>
+                    <li><a href="tel:5551234567">5551289340</a></li>
+                    <li><a href="tel:5551234567">5551512267</a></li>
+                  </ul>
+                </div>
+        
+                <div class="col-md-3 col-6">
+                  <h4> Мы в сети</h4>
+                  <div class="footer-icons">
+                    <a href="#"><i class="fa-brands fa-vk"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </footer>
+        
+        
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
